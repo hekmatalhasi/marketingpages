@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Harbor Therapy — Compassionate Online Therapy Services</title>
+    <title>هاربر ثيرابي — خدمات علاج نفسي عبر الإنترنت بروح إنسانية</title>
     <meta
       name="description"
-      content="Harbor Therapy offers licensed online therapy, personalized care plans, and flexible scheduling to support your mental health journey."
+      content="هاربر ثيرابي تقدّم علاجًا نفسيًا مرخّصًا عبر الإنترنت، وخطط رعاية مخصّصة، وجداول مرنة لدعم رحلتك نحو توازن الصحة النفسية."
     />
     <link
       rel="preconnect"
@@ -18,7 +18,7 @@
       crossorigin
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:wght@600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=El+Messiri:wght@600&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -43,18 +43,20 @@
 
       body {
         margin: 0;
-        font-family: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        font-family: "Cairo", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
           sans-serif;
         color: var(--color-text);
         background: var(--color-background);
         line-height: 1.6;
+        direction: rtl;
+        text-align: right;
       }
 
       h1,
       h2,
       h3,
       h4 {
-        font-family: "Playfair Display", Georgia, serif;
+        font-family: "El Messiri", Georgia, serif;
         margin: 0;
         line-height: 1.2;
         color: var(--color-text);
@@ -240,21 +242,21 @@
         place-items: center;
       }
 
-      .hero-card {
-        width: min(370px, 100%);
-        background: var(--color-card-bg);
-        border-radius: var(--radius-lg);
-        box-shadow: var(--shadow-soft);
-        padding: 2.2rem;
-        display: grid;
-        gap: 1.5rem;
-        text-align: center;
-      }
+        .hero-card {
+          width: min(370px, 100%);
+          background: var(--color-card-bg);
+          border-radius: var(--radius-lg);
+          box-shadow: var(--shadow-soft);
+          padding: 2.2rem;
+          display: grid;
+          gap: 1.5rem;
+          text-align: center;
+        }
 
-      .hero-card h3 {
-        font-family: "Manrope", sans-serif;
-        font-size: 1.4rem;
-      }
+        .hero-card h3 {
+          font-family: "Cairo", sans-serif;
+          font-size: 1.4rem;
+        }
 
       .hero-availability {
         display: grid;
@@ -350,28 +352,28 @@
         gap: 1rem;
       }
 
-      .service-icon {
-        width: 56px;
-        height: 56px;
-        border-radius: 18px;
-        background: rgba(75, 112, 221, 0.12);
-        display: grid;
-        place-items: center;
-        font-size: 1.6rem;
-      }
+        .service-icon {
+          width: 56px;
+          height: 56px;
+          border-radius: 18px;
+          background: rgba(75, 112, 221, 0.12);
+          display: grid;
+          place-items: center;
+          font-size: 1.6rem;
+        }
 
-      .service-card h3 {
-        font-family: "Manrope", sans-serif;
-        font-size: 1.25rem;
-      }
+        .service-card h3 {
+          font-family: "Cairo", sans-serif;
+          font-size: 1.25rem;
+        }
 
-      .service-card ul {
-        margin: 0;
-        padding-left: 1rem;
-        color: var(--color-muted);
-        display: grid;
-        gap: 0.4rem;
-      }
+        .service-card ul {
+          margin: 0;
+          padding-inline-start: 1rem;
+          color: var(--color-muted);
+          display: grid;
+          gap: 0.4rem;
+        }
 
       .approach {
         background: linear-gradient(135deg, rgba(75, 112, 221, 0.08), rgba(134, 197, 190, 0.12));
@@ -515,15 +517,15 @@
         font-size: 2.6rem;
         font-weight: 600;
         color: var(--color-primary-dark);
-      }
+        }
 
-      .plan-features {
-        margin: 0;
-        padding-left: 1rem;
-        display: grid;
-        gap: 0.6rem;
-        color: var(--color-muted);
-      }
+        .plan-features {
+          margin: 0;
+          padding-inline-start: 1rem;
+          display: grid;
+          gap: 0.6rem;
+          color: var(--color-muted);
+        }
 
       .faq-grid {
         display: grid;
@@ -571,13 +573,13 @@
         text-align: center;
         color: white;
         box-shadow: 0 30px 60px rgba(31, 42, 68, 0.25);
-      }
+        }
 
-      .cta-banner h2 {
-        color: inherit;
-        font-family: "Manrope", sans-serif;
-        font-size: clamp(2rem, 4vw, 2.6rem);
-      }
+        .cta-banner h2 {
+          color: inherit;
+          font-family: "Cairo", sans-serif;
+          font-size: clamp(2rem, 4vw, 2.6rem);
+        }
 
       .cta-banner p {
         color: rgba(255, 255, 255, 0.85);
@@ -660,13 +662,13 @@
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 2.5rem;
-      }
+        }
 
-      .footer-brand h3 {
-        font-family: "Manrope", sans-serif;
-        color: white;
-        margin-bottom: 0.8rem;
-      }
+        .footer-brand h3 {
+          font-family: "Cairo", sans-serif;
+          color: white;
+          margin-bottom: 0.8rem;
+        }
 
       .footer-links,
       .footer-contact {
@@ -798,22 +800,22 @@
       <div class="nav">
         <a class="logo" href="#top">
           <span class="logo-badge">H</span>
-          Harbor Therapy
+            هاربر ثيرابي
         </a>
         <button class="mobile-nav-toggle" id="mobileNavToggle" aria-expanded="false" aria-controls="primaryNav">
           ☰
         </button>
         <nav>
           <ul id="primaryNav">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#approach">Our Approach</a></li>
-            <li><a href="#testimonials">Stories</a></li>
-            <li><a href="#pricing">Plans</a></li>
-            <li><a href="#contact">Contact</a></li>
+              <li><a href="#services">الخدمات</a></li>
+              <li><a href="#approach">منهجيتنا</a></li>
+              <li><a href="#testimonials">قصص النجاح</a></li>
+              <li><a href="#pricing">الباقات</a></li>
+              <li><a href="#contact">تواصل معنا</a></li>
           </ul>
         </nav>
         <div class="nav-actions">
-          <a class="btn btn-outline" href="#contact">Free Consultation</a>
+            <a class="btn btn-outline" href="#contact">استشارة مجانية</a>
         </div>
       </div>
     </header>
@@ -821,52 +823,50 @@
     <main>
       <section class="hero" id="top">
         <div class="hero-copy">
-          <span class="hero-eyebrow">Licensed online therapy • Compassionate care</span>
-          <h1>Find calm, clarity, and support with personalized therapy.</h1>
+            <span class="hero-eyebrow">علاج نفسي مرخّص عبر الإنترنت • رعاية تراعي الإنسان</span>
+            <h1>اكتشف السكينة والوضوح والدعم بعلاجٍ مخصّص لك.</h1>
           <p>
-            Whether you’re navigating anxiety, burnout, or life transitions, Harbor Therapy
-            pairs you with a licensed therapist who understands your story and supports your
-            growth with science-backed strategies.
+              سواء كنت تواجه القلق أو الإرهاق أو تحولات الحياة، يقرنك هاربر ثيرابي بأخصائي مرخّص يفهم قصتك ويدعم نموّك باستراتيجيات قائمة على العلم.
           </p>
           <div class="hero-bullets">
-            <span>Flexible scheduling including evenings and weekends</span>
-            <span>Individual, couples, and group therapy options</span>
-            <span>Confidential, HIPAA-compliant sessions</span>
+              <span>مواعيد مرنة تشمل الأمسيات وعطلة نهاية الأسبوع</span>
+              <span>خيارات للعلاج الفردي، وللأزواج، وللبرامج الجماعية</span>
+              <span>جلسات سرية ومتوافقة مع معايير HIPAA</span>
           </div>
           <div class="hero-cta">
-            <a class="btn btn-primary" href="#contact">Book a discovery call</a>
-            <a class="btn btn-outline" href="#services">Explore services</a>
+              <a class="btn btn-primary" href="#contact">احجز مكالمة تعريفية</a>
+              <a class="btn btn-outline" href="#services">استكشف خدماتنا</a>
           </div>
         </div>
         <div class="hero-image" aria-hidden="true">
           <div class="hero-card">
             <div>
-              <h3>Therapists available this week</h3>
+                <h3>المعالجون المتاحون هذا الأسبوع</h3>
               <div class="hero-availability">
-                <span><strong>24</strong> openings for new clients</span>
-                <span><strong>48h</strong> average wait time</span>
+                  <span><strong>24</strong> موعدًا متاحًا لعملاء جدد</span>
+                  <span><strong>48</strong> ساعة متوسط وقت الانتظار</span>
               </div>
             </div>
             <div class="stats">
               <div class="stat-card">
                 <strong>92%</strong>
-                report reduced anxiety
+                  يذكرون انخفاضًا في القلق
               </div>
               <div class="stat-card">
                 <strong>4.9★</strong>
-                client satisfaction
+                  رضا العملاء
               </div>
             </div>
             <div>
-              <p>“I finally feel heard and supported. Every session gives me tools I can use.”</p>
-              <strong>— Maya, client since 2023</strong>
+                <p>«أشعر أخيرًا بأن أحدًا يصغي إلي ويدعمني. كل جلسة تمنحني أدوات أستطيع تطبيقها.»</p>
+                <strong>— مايا، عميلة منذ 2023</strong>
             </div>
           </div>
         </div>
       </section>
 
       <div class="trust-bar">
-        <p>Trusted by clients from</p>
+          <p>يثق بنا عملاء من</p>
         <div class="trust-logos">
           <span>Forbes Health</span>
           <span>Mindful Living</span>
@@ -877,50 +877,46 @@
 
       <section id="services">
         <div class="section-heading">
-          <h2>Therapy services tailored to support your journey</h2>
+            <h2>خدمات علاجية مصممة لدعم رحلتك</h2>
           <p>
-            Explore specialized care designed around your needs. From immediate relief to long-term
-            growth, our therapists partner with you every step of the way.
+              اكتشف رعاية متخصصة مبنية على احتياجاتك. من التخفيف الفوري إلى النمو طويل المدى، يعمل معالِجونا معك في كل خطوة.
           </p>
         </div>
         <div class="services-grid">
           <article class="service-card">
             <div class="service-icon" aria-hidden="true">🌿</div>
-            <h3>Individual Therapy</h3>
+              <h3>علاج فردي</h3>
             <p>
-              Personalized one-on-one sessions focused on anxiety, depression, stress management,
-              and life transitions.
+                جلسات فردية مخصّصة تركّز على القلق، والاكتئاب، وإدارة الضغط، وتحولات الحياة.
             </p>
             <ul>
-              <li>Evidence-based CBT, ACT, and mindfulness</li>
-              <li>Weekly or bi-weekly 50-minute sessions</li>
-              <li>Goal tracking dashboard</li>
+                <li>علاج معرفي سلوكي (CBT)، وعلاج القبول والالتزام (ACT)، وتمارين يقظة</li>
+                <li>جلسات أسبوعية أو نصف شهرية مدتها 50 دقيقة</li>
+                <li>لوحة متابعة للأهداف</li>
             </ul>
           </article>
           <article class="service-card">
             <div class="service-icon" aria-hidden="true">🤝</div>
-            <h3>Couples Counseling</h3>
+              <h3>إرشاد للأزواج</h3>
             <p>
-              Rebuild trust, improve communication, and create a shared path toward a meaningful
-              relationship.
+                أعد بناء الثقة، وحسّن التواصل، وارسم مسارًا مشتركًا لعلاقة أكثر معنى.
             </p>
             <ul>
-              <li>Licensed couples therapists</li>
-              <li>Conflict transformation strategies</li>
-              <li>Flexible 75-minute sessions</li>
+                <li>أخصائيون مرخّصون للعلاج الزوجي</li>
+                <li>استراتيجيات لتحويل النزاعات</li>
+                <li>جلسات مرنة مدتها 75 دقيقة</li>
             </ul>
           </article>
           <article class="service-card">
             <div class="service-icon" aria-hidden="true">🌅</div>
-            <h3>Group Programs</h3>
+              <h3>برامج جماعية</h3>
             <p>
-              Guided small-group sessions focused on burnout recovery, grief support, and mindful
-              leadership.
+                جلسات جماعية صغيرة موجَّهة حول التعافي من الإرهاق، ودعم الفقد، والقيادة الواعية.
             </p>
             <ul>
-              <li>6–8 participants max</li>
-              <li>Structured curriculum with take-home exercises</li>
-              <li>Peer accountability and community</li>
+                <li>من 6 إلى 8 مشاركين كحد أقصى</li>
+                <li>منهاج منظم مع تمارين منزلية</li>
+                <li>مساءلة بين الأقران وشعور بالمجتمع</li>
             </ul>
           </article>
         </div>
@@ -930,52 +926,47 @@
         <div class="approach">
           <div>
             <div class="section-heading">
-              <h2>You deserve tailored, evidence-based care</h2>
+                <h2>أنت تستحق رعاية مخصّصة قائمة على الأدلة</h2>
               <p>
-                Harbor therapists blend clinical expertise with genuine empathy. Our collaborative
-                approach ensures each session adapts to your pace, priorities, and progress.
+                  يمزج معالِجو هاربر بين الخبرة السريرية والتعاطف الحقيقي. يضمن نهجنا التعاوني أن تتكيف كل جلسة مع وتيرتك وأولوياتك وتقدّمك.
               </p>
             </div>
             <div class="approach-steps">
               <div class="step">
                 <div class="step-heading">
                   <span class="step-number">1</span>
-                  Personalized matching
+                    مواءمة شخصية
                 </div>
                 <p>
-                  Complete a 5-minute intake. We pair you with a therapist experienced in your goals
-                  and identity.
+                    أكمل نموذجًا تعريفيًا في 5 دقائق. نوفّقك مع أخصائي يمتلك خبرة تتوافق مع أهدافك وهويتك.
                 </p>
               </div>
               <div class="step">
                 <div class="step-heading">
                   <span class="step-number">2</span>
-                  Collaborative roadmap
+                    خارطة طريق مشتركة
                 </div>
                 <p>
-                  Co-create a care plan with clear milestones, check-ins, and resources between
-                  sessions.
+                    نضع معًا خطة رعاية بأهداف واضحة، ومتابعات، وموارد مساندة بين الجلسات.
                 </p>
               </div>
               <div class="step">
                 <div class="step-heading">
                   <span class="step-number">3</span>
-                  Sustainable growth
+                    نمو مستدام
                 </div>
                 <p>
-                  Practice actionable strategies and track how you feel each week with shared
-                  insights.
+                    طبّق استراتيجيات عملية وتتبع شعورك أسبوعيًا مع رؤى مشتركة.
                 </p>
               </div>
             </div>
           </div>
-          <aside class="therapist-card" aria-label="Lead therapist profile">
-            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80" alt="Portrait of Dr. Lena Ortiz" />
-            <strong>Dr. Lena Ortiz, LMFT</strong>
-            <span class="credentials">15 years experience • Trauma-informed</span>
+            <aside class="therapist-card" aria-label="بطاقة تعريف المعالج الرئيسي">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80" alt="صورة للدكتورة لينا أورتيز" />
+              <strong>الدكتورة لينا أورتيز، معالجة أسرية مرخّصة</strong>
+              <span class="credentials">15 عامًا من الخبرة • نهج قائم على الصدمات</span>
             <p>
-              “Therapy should feel like a safe harbor—somewhere you can rest, reflect, and rebuild.
-              Together, we’ll uncover what resilience looks like for you.”
+                «يجب أن يشعر العلاج وكأنه ميناء آمن — مكان للراحة والتأمل وإعادة البناء. سنكتشف معًا ما تعنيه المرونة بالنسبة لك.»
             </p>
           </aside>
         </div>
@@ -983,62 +974,59 @@
         <div class="metrics">
           <div class="metric-card">
             <strong>1,200+</strong>
-            clients supported to date
+              عملاء تم دعمهم حتى الآن
           </div>
           <div class="metric-card">
             <strong>78%</strong>
-            notice improvements within 6 sessions
+              يلاحظون تحسنًا خلال 6 جلسات
           </div>
           <div class="metric-card">
             <strong>35</strong>
-            licensed therapists across 12 states
+              معالجون مرخّصون في 12 ولاية
           </div>
           <div class="metric-card">
             <strong>100%</strong>
-            HIPAA-compliant platform
+              منصة متوافقة بالكامل مع HIPAA
           </div>
         </div>
       </section>
 
       <section id="testimonials">
         <div class="section-heading">
-          <h2>What our clients say</h2>
+            <h2>ماذا يقول عملاؤنا</h2>
           <p>
-            Real stories from clients who regained confidence, clarity, and balance with Harbor
-            Therapy.
+              قصص حقيقية من عملاء استعادوا الثقة والوضوح والتوازن مع هاربر ثيرابي.
           </p>
         </div>
         <div class="testimonials">
           <article class="testimonial-card">
-            <div class="testimonial-rating" aria-label="5 star rating">★★★★★</div>
+              <div class="testimonial-rating" aria-label="تقييم خمس نجوم">★★★★★</div>
             <p>
-              “My therapist helped me untangle years of anxiety. The guided exercises between
-              sessions made the difference.”
+                «ساعدني معالجي على تفكيك سنوات من القلق. التمارين الموجّهة بين الجلسات صنعت الفارق.»
             </p>
             <div class="testimonial-author">
-              <span>Maya S.</span>
-              <span>Product Designer • Seattle</span>
+                <span>مايا س.</span>
+                <span>مصممة منتجات • سياتل</span>
             </div>
           </article>
           <article class="testimonial-card">
-            <div class="testimonial-rating" aria-label="5 star rating">★★★★★</div>
+              <div class="testimonial-rating" aria-label="تقييم خمس نجوم">★★★★★</div>
             <p>
-              “Our relationship felt stuck. Harbor gave us language for our needs and a roadmap to
-              rebuild trust.”
+                «كانت علاقتنا متوقفة. منحتنا هاربر لغة لاحتياجاتنا وخارطة طريق لإعادة بناء الثقة.»
             </p>
             <div class="testimonial-author">
-              <span>Jordan & Alex</span>
-              <span>Couples Counseling Clients</span>
+                <span>جوردان وأليكس</span>
+                <span>عملاء إرشاد للأزواج</span>
             </div>
           </article>
           <article class="testimonial-card">
-            <div class="testimonial-rating" aria-label="5 star rating">★★★★★</div>
+              <div class="testimonial-rating" aria-label="تقييم خمس نجوم">★★★★★</div>
             <p>
-              “The group program felt like community. I’m calmer at work and kinder to myself.”
+                «شعرت بأن البرنامج الجماعي مجتمع حقيقي. أصبحت أكثر هدوءًا في العمل وأكثر لطفًا مع نفسي.»
             </p>
             <div class="testimonial-author">
-              <span>Priya A.</span>
-              <span>Leadership Coach • Austin</span>
+                <span>بريا أ.</span>
+                <span>مدربة قيادة • أوستن</span>
             </div>
           </article>
         </div>
@@ -1046,152 +1034,144 @@
 
       <section id="pricing">
         <div class="section-heading">
-          <h2>Flexible plans that grow with you</h2>
+            <h2>باقات مرنة تنمو معك</h2>
           <p>
-            Start with a free 20-minute consultation. No long-term contracts—adjust your plan at any
-            time as your needs evolve.
+              ابدأ باستشارة مجانية مدتها 20 دقيقة. لا عقود طويلة الأجل — عدّل خطتك كلما تغيّرت احتياجاتك.
           </p>
         </div>
         <div class="plans">
           <article class="plan-card">
-            <h3>Foundations</h3>
-            <p class="plan-price">$120<span style="font-size: 0.5em; font-weight: 500;"> / session</span></p>
-            <p>Ideal for individuals starting their therapy journey.</p>
+              <h3>الأساسيات</h3>
+              <p class="plan-price">$120<span style="font-size: 0.5em; font-weight: 500;"> / الجلسة</span></p>
+              <p>مثالية للأفراد في بداية رحلتهم العلاجية.</p>
             <ul class="plan-features">
-              <li>Weekly 50-minute sessions</li>
-              <li>Personalized care plan & exercises</li>
-              <li>Secure messaging between sessions</li>
+                <li>جلسات أسبوعية مدتها 50 دقيقة</li>
+                <li>خطة رعاية شخصية وتمارين داعمة</li>
+                <li>رسائل آمنة بين الجلسات</li>
             </ul>
-            <a class="btn btn-outline" href="#contact">Join waitlist</a>
+              <a class="btn btn-outline" href="#contact">انضم إلى قائمة الانتظار</a>
           </article>
           <article class="plan-card popular">
-            <h3>Momentum</h3>
-            <p class="plan-price">$420<span style="font-size: 0.5em; font-weight: 500;"> / month</span></p>
-            <p>Best for sustained progress with added support.</p>
+              <h3>الزخم</h3>
+              <p class="plan-price">$420<span style="font-size: 0.5em; font-weight: 500;"> / الشهر</span></p>
+              <p>الأفضل لتحقيق تقدّم مستمر مع دعم إضافي.</p>
             <ul class="plan-features">
-              <li>4 x 50-minute sessions monthly</li>
-              <li>Progress tracking dashboard</li>
-              <li>24-hour therapist response window</li>
+                <li>4 جلسات مدتها 50 دقيقة شهريًا</li>
+                <li>لوحة متابعة للتقدّم</li>
+                <li>استجابة من المعالج خلال 24 ساعة</li>
             </ul>
-            <a class="btn btn-primary" href="#contact">Schedule consult</a>
+              <a class="btn btn-primary" href="#contact">حدّد استشارة</a>
           </article>
           <article class="plan-card">
-            <h3>Partners</h3>
-            <p class="plan-price">$220<span style="font-size: 0.5em; font-weight: 500;"> / session</span></p>
-            <p>Designed for couples and families seeking deeper connection.</p>
+              <h3>الشركاء</h3>
+              <p class="plan-price">$220<span style="font-size: 0.5em; font-weight: 500;"> / الجلسة</span></p>
+              <p>مصممة للأزواج والعائلات الباحثين عن تواصل أعمق.</p>
             <ul class="plan-features">
-              <li>75-minute joint sessions</li>
-              <li>Individual check-ins as needed</li>
-              <li>Shared resource library</li>
+                <li>جلسات مشتركة مدتها 75 دقيقة</li>
+                <li>متابعة فردية عند الحاجة</li>
+                <li>مكتبة موارد مشتركة</li>
             </ul>
-            <a class="btn btn-outline" href="#contact">Talk with us</a>
+              <a class="btn btn-outline" href="#contact">تحدث معنا</a>
           </article>
         </div>
       </section>
 
       <section id="faq">
         <div class="section-heading">
-          <h2>Questions, answered</h2>
+            <h2>أسئلة متكررة وإجابات واضحة</h2>
           <p>
-            We’re here to help you feel confident taking the next step. If you don’t find what you
-            need, reach out and we’ll respond within one business day.
+              نحن هنا لنساعدك على الشعور بالثقة في خطوتك التالية. إذا لم تجد ما تحتاج إليه، تواصل معنا وسنرد خلال يوم عمل واحد.
           </p>
         </div>
         <div class="faq-grid">
           <details>
-            <summary>How quickly can I start sessions?</summary>
+              <summary>ما المدة التي أحتاجها لبدء الجلسات؟</summary>
             <p>
-              Most clients begin within 2–5 days after their discovery call. We’ll match you with a
-              therapist who aligns with your needs and schedule.
+                يبدأ معظم العملاء خلال 2–5 أيام بعد مكالمتهم التعريفية. نوفّقك مع معالج يناسب احتياجاتك وجدولك.
             </p>
           </details>
           <details>
-            <summary>Do you accept insurance?</summary>
+              <summary>هل تقبلون التأمين الصحي؟</summary>
             <p>
-              Harbor Therapy is out-of-network, but we provide superbills for reimbursement and can
-              help you navigate employer wellness stipends.
+                هاربر ثيرابي خارج شبكات التأمين، لكننا نوفر فواتير تفصيلية لاسترداد التكاليف ونساعدك في الاستفادة من برامج دعم الشركات.
             </p>
           </details>
           <details>
-            <summary>Are sessions virtual or in person?</summary>
+              <summary>هل الجلسات افتراضية أم حضورية؟</summary>
             <p>
-              All sessions take place virtually using our secure, HIPAA-compliant video platform.
-              Select therapists also offer hybrid options upon request.
+                تُعقد جميع الجلسات افتراضيًا عبر منصتنا المرئية الآمنة والمتوافقة مع HIPAA. يقدّم بعض المعالجين خيارًا هجينًا عند الطلب.
             </p>
           </details>
           <details>
-            <summary>Can I switch therapists if it’s not the right fit?</summary>
+              <summary>هل يمكنني تغيير الأخصائي إذا لم يكن التوافق مناسبًا؟</summary>
             <p>
-              Absolutely. Chemistry matters. Let us know and we’ll rematch you with another therapist
-              at no additional cost.
+                بالتأكيد. فالتوافق أساسي. أخبرنا وسنقوم بمواءمتك مع أخصائي آخر دون أي تكلفة إضافية.
             </p>
           </details>
         </div>
         <div class="cta-banner">
-          <h2>Ready to feel supported on your terms?</h2>
-          <p>Book a free discovery call to ask questions, share your goals, and explore next steps.</p>
+            <h2>مستعد لتشعر بالدعم وفق شروطك؟</h2>
+            <p>احجز مكالمة تعريفية مجانية لطرح أسئلتك، ومشاركة أهدافك، واستكشاف الخطوات التالية.</p>
           <div class="cta-actions">
-            <a class="btn" href="#contact">Schedule a call</a>
-            <a class="btn btn-outline" href="#services">See how therapy works</a>
+              <a class="btn" href="#contact">احجز مكالمة</a>
+              <a class="btn btn-outline" href="#services">تعرّف على كيفية عمل العلاج</a>
           </div>
         </div>
       </section>
 
       <section id="contact">
         <div class="section-heading">
-          <h2>Let’s begin with a conversation</h2>
+            <h2>لنبدأ بحوار</h2>
           <p>
-            Share a bit about what you’re seeking and our care team will reach out with next steps in
-            under 24 hours.
+              شاركنا ما تبحث عنه وسيتواصل فريق الرعاية لدينا بخطوات واضحة خلال أقل من 24 ساعة.
           </p>
         </div>
         <div class="contact-section">
           <div>
-            <h3>Book a discovery call</h3>
+              <h3>احجز مكالمة تعريفية</h3>
             <p>
-              We’ll discuss what you’re looking for, answer questions about our therapy process, and
-              recommend a therapist who fits your needs.
+                سنناقش ما تحتاجه، ونجيب على أسئلتك حول مسار العلاج لدينا، ونوصي بأخصائي يتناسب مع احتياجاتك.
             </p>
             <ul>
-              <li>20-minute video call</li>
-              <li>No obligation to continue</li>
-              <li>Personalized therapist match guarantee</li>
+                <li>مكالمة فيديو مدتها 20 دقيقة</li>
+                <li>لا التزام بالاستمرار</li>
+                <li>ضمان مواءمة معالج مخصص</li>
             </ul>
           </div>
-          <form aria-label="Discovery call request form">
+            <form aria-label="نموذج طلب مكالمة تعريفية">
             <div>
-              <label for="name">Full name</label>
-              <input id="name" name="name" type="text" placeholder="Taylor Morgan" required />
+                <label for="name">الاسم الكامل</label>
+                <input id="name" name="name" type="text" placeholder="ليلى العتيبي" required />
             </div>
             <div>
-              <label for="email">Email</label>
+                <label for="email">البريد الإلكتروني</label>
               <input
                 id="email"
                 name="email"
                 type="email"
-                placeholder="you@example.com"
+                  placeholder="you@example.com"
                 required
               />
             </div>
             <div>
-              <label for="support">What support are you seeking?</label>
+                <label for="support">ما نوع الدعم الذي تبحث عنه؟</label>
               <select id="support" name="support" required>
-                <option value="">Select an option</option>
-                <option value="individual">Individual therapy</option>
-                <option value="couples">Couples counseling</option>
-                <option value="group">Group program</option>
-                <option value="corporate">Corporate wellness partnership</option>
+                  <option value="">اختر خيارًا</option>
+                  <option value="individual">علاج فردي</option>
+                  <option value="couples">إرشاد للأزواج</option>
+                  <option value="group">برنامج جماعي</option>
+                  <option value="corporate">شراكة عافية للشركات</option>
               </select>
             </div>
             <div>
-              <label for="message">Anything you’d like us to know?</label>
+                <label for="message">هل تود مشاركة أي تفاصيل؟</label>
               <textarea
                 id="message"
                 name="message"
-                placeholder="Share your goals, preferences, or scheduling needs."
+                  placeholder="شارك أهدافك أو تفضيلاتك أو الأوقات المناسبة لك."
               ></textarea>
             </div>
-            <button class="btn btn-primary" type="submit">Request discovery call</button>
+              <button class="btn btn-primary" type="submit">أرسل طلب المكالمة التعريفية</button>
           </form>
         </div>
       </section>
@@ -1200,41 +1180,40 @@
     <footer>
       <div class="footer-content">
         <div class="footer-brand">
-          <h3>Harbor Therapy</h3>
+            <h3>هاربر ثيرابي</h3>
           <p>
-            Compassionate mental health support for individuals, couples, and leaders seeking calm,
-            clarity, and confidence.
+              رعاية نفسية إنسانية للأفراد والأزواج والقادة الباحثين عن السكينة والوضوح والثقة.
           </p>
         </div>
         <div>
-          <h4>Explore</h4>
+            <h4>استكشف</h4>
           <div class="footer-links">
-            <a href="#services">Services</a>
-            <a href="#approach">Our Approach</a>
-            <a href="#testimonials">Client Stories</a>
-            <a href="#pricing">Plans</a>
+              <a href="#services">الخدمات</a>
+              <a href="#approach">منهجيتنا</a>
+              <a href="#testimonials">قصص العملاء</a>
+              <a href="#pricing">الباقات</a>
           </div>
         </div>
         <div>
-          <h4>Resources</h4>
+            <h4>موارد</h4>
           <div class="footer-links">
-            <a href="#">Mental health journal</a>
-            <a href="#">Guided meditations</a>
-            <a href="#">Support center</a>
-            <a href="#">Community events</a>
+              <a href="#">مجلة للصحة النفسية</a>
+              <a href="#">تأملات موجهة</a>
+              <a href="#">مركز الدعم</a>
+              <a href="#">فعاليات المجتمع</a>
           </div>
         </div>
         <div>
-          <h4>Contact</h4>
+            <h4>تواصل</h4>
           <div class="footer-contact">
             <span>hello@harbortherapy.co</span>
             <span>(855) 321-4243</span>
-            <span>License #HT-4921</span>
+              <span>ترخيص رقم HT-4921</span>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        © <span id="year"></span> Harbor Therapy Collective. All rights reserved.
+          © <span id="year"></span> هاربر ثيرابي كوليكتيف. جميع الحقوق محفوظة.
       </div>
     </footer>
 
