@@ -1,1 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Harbor Therapy — Compassionate Online Therapy Services</title>
+    <meta
+      name="description"
+      content="Harbor Therapy offers licensed online therapy, personalized care plans, and flexible scheduling to support your mental health journey."
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --color-background: #f6f7fb;
+        --color-primary: #4b70dd;
+        --color-primary-dark: #3652a9;
+        --color-secondary: #86c5be;
+        --color-text: #1f2a44;
+        --color-muted: #6c7792;
+        --color-card-bg: #ffffff;
+        --shadow-soft: 0 18px 40px rgba(31, 42, 68, 0.08);
+        --radius-lg: 24px;
+        --radius-md: 18px;
+        --radius-sm: 12px;
+        --max-width: 1200px;
+      }
 
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        color: var(--color-text);
+        background: var(--color-background);
+        line-height: 1.6;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Playfair Display", Georgia, serif;
+        margin: 0;
+        line-height: 1.2;
+        color: var(--color-text);
+      }
+
+      p {
+        margin: 0 0 1rem;
+        color: var(--color-muted);
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      button,
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.85rem 1.6rem;
+        border-radius: 999px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        font-size: 0.95rem;
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+        color: white;
+        box-shadow: 0 10px 25px rgba(75, 112, 221, 0.25);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 18px 40px rgba(54, 82, 169, 0.35);
+      }
+
+      .btn-outline {
+        border: 1.5px solid rgba(75, 112, 221, 0.35);
+        background: white;
+        color: var(--color-primary-dark);
+      }
+
+      .btn-outline:hover {
+        border-color: var(--color-primary);
+        transform: translateY(-2px);
+        box-shadow: 0 12px 24px rgba(31, 42, 68, 0.15);
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: rgba(246, 247, 251, 0.94);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(108, 119, 146, 0.06);
+      }
+
+      .nav {
+        margin: 0 auto;
+        max-width: var(--max-width);
+        padding: 1rem 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .logo {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: var(--color-primary-dark);
+      }
+
+      .logo-badge {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+        display: grid;
+        place-items: center;
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+        margin: 0;
+        padding: 0;
+        font-weight: 500;
+        color: var(--color-muted);
+      }
+
+      nav a:hover {
+        color: var(--color-primary-dark);
+      }
+
+      .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .hero {
+        max-width: var(--max-width);
+        margin: 4rem auto 0;
+        padding: 3rem 1.5rem 4rem;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 3rem;
+        align-items: center;
+      }
+
+      .hero-copy {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .hero-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.4rem 0.9rem;
+        border-radius: 999px;
+        background: rgba(75, 112, 221, 0.12);
+        color: var(--color-primary-dark);
+        font-weight: 600;
+        font-size: 0.85rem;
+        letter-spacing: 0.03em;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.4rem, 5vw, 3.6rem);
+      }
+
+      .hero p {
+        font-size: 1.05rem;
+      }
+
+      .hero-bullets {
+        display: grid;
+        gap: 0.8rem;
+      }
+
+      .hero-bullets span {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        color: var(--color-muted);
+        font-weight: 500;
+      }
+
+      .hero-bullets span::before {
+        content: "●";
+        color: var(--color-secondary);
+        font-size: 0.8rem;
+      }
+
+      .hero-cta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .hero-image {
+        position: relative;
+        padding: 2.5rem;
+        background: radial-gradient(circle at top right, rgba(75, 112, 221, 0.18), transparent 55%);
+        border-radius: var(--radius-lg);
+        min-height: 420px;
+        display: grid;
+        place-items: center;
+      }
+
+      .hero-card {
+        width: min(370px, 100%);
+        background: var(--color-card-bg);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-soft);
+        padding: 2.2rem;
+        display: grid;
+        gap: 1.5rem;
+        text-align: center;
+      }
+
+      .hero-card h3 {
+        font-family: "Manrope", sans-serif;
+        font-size: 1.4rem;
+      }
+
+      .hero-availability {
+        display: grid;
+        gap: 0.6rem;
+        font-size: 0.95rem;
+        color: var(--color-muted);
+      }
+
+      .hero-availability strong {
+        color: var(--color-primary-dark);
+      }
+
+      .hero-card .stats {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+      }
+
+      .stat-card {
+        background: rgba(134, 197, 190, 0.12);
+        border-radius: var(--radius-md);
+        padding: 1rem;
+        display: grid;
+        gap: 0.3rem;
+        font-size: 0.85rem;
+      }
+
+      .stat-card strong {
+        font-size: 1.35rem;
+        color: var(--color-primary-dark);
+      }
+
+      .trust-bar {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 0 1.5rem 3rem;
+        display: grid;
+        gap: 1rem;
+      }
+
+      .trust-bar p {
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        font-size: 0.75rem;
+        color: var(--color-muted);
+        text-align: center;
+      }
+
+      .trust-logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem 2.5rem;
+        color: rgba(31, 42, 68, 0.45);
+        font-weight: 600;
+        font-size: 0.95rem;
+        letter-spacing: 0.04em;
+      }
+
+      section {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 0 1.5rem 5rem;
+      }
+
+      .section-heading {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .section-heading h2 {
+        font-size: clamp(2rem, 4vw, 2.6rem);
+        margin-bottom: 1rem;
+      }
+
+      .section-heading p {
+        max-width: 680px;
+        margin: 0 auto;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.8rem;
+      }
+
+      .service-card {
+        background: var(--color-card-bg);
+        border-radius: var(--radius-lg);
+        padding: 2rem;
+        box-shadow: var(--shadow-soft);
+        display: grid;
+        gap: 1rem;
+      }
+
+      .service-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: 18px;
+        background: rgba(75, 112, 221, 0.12);
+        display: grid;
+        place-items: center;
+        font-size: 1.6rem;
+      }
+
+      .service-card h3 {
+        font-family: "Manrope", sans-serif;
+        font-size: 1.25rem;
+      }
+
+      .service-card ul {
+        margin: 0;
+        padding-left: 1rem;
+        color: var(--color-muted);
+        display: grid;
+        gap: 0.4rem;
+      }
+
+      .approach {
+        background: linear-gradient(135deg, rgba(75, 112, 221, 0.08), rgba(134, 197, 190, 0.12));
+        border-radius: var(--radius-lg);
+        padding: 3rem 3.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 3rem;
+        align-items: center;
+      }
+
+      .approach-steps {
+        display: grid;
+        gap: 1.4rem;
+      }
+
+      .step {
+        display: grid;
+        gap: 0.4rem;
+      }
+
+      .step-heading {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.8rem;
+        font-weight: 700;
+        color: var(--color-primary-dark);
+      }
+
+      .step-number {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: white;
+        box-shadow: 0 10px 30px rgba(75, 112, 221, 0.12);
+      }
+
+      .therapist-card {
+        background: var(--color-card-bg);
+        border-radius: var(--radius-lg);
+        padding: 2rem;
+        box-shadow: var(--shadow-soft);
+        display: grid;
+        gap: 1rem;
+        text-align: center;
+      }
+
+      .therapist-card img {
+        width: 110px;
+        height: 110px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 0 auto;
+        border: 4px solid rgba(75, 112, 221, 0.24);
+      }
+
+      .therapist-card .credentials {
+        display: inline-flex;
+        background: rgba(75, 112, 221, 0.12);
+        color: var(--color-primary-dark);
+        border-radius: 999px;
+        padding: 0.35rem 0.9rem;
+        font-size: 0.85rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+
+      .metrics {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1.5rem;
+        margin-top: 3rem;
+      }
+
+      .metric-card {
+        background: var(--color-card-bg);
+        border-radius: var(--radius-lg);
+        padding: 1.6rem;
+        text-align: center;
+        box-shadow: var(--shadow-soft);
+      }
+
+      .metric-card strong {
+        display: block;
+        font-size: 2rem;
+        color: var(--color-primary-dark);
+      }
+
+      .testimonials {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.8rem;
+      }
+
+      .testimonial-card {
+        background: var(--color-card-bg);
+        border-radius: var(--radius-lg);
+        padding: 2rem;
+        box-shadow: var(--shadow-soft);
+        display: grid;
+        gap: 1.2rem;
+      }
+
+      .testimonial-rating {
+        color: #f5b452;
+        letter-spacing: 0.2rem;
+      }
+
+      .testimonial-author {
+        display: flex;
+        flex-direction: column;
+        gap: 0.15rem;
+        font-weight: 600;
+        color: var(--color-primary-dark);
+      }
+
+      .plans {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.8rem;
+      }
+
+      .plan-card {
+        background: white;
+        border-radius: var(--radius-lg);
+        padding: 2.3rem;
+        box-shadow: var(--shadow-soft);
+        display: grid;
+        gap: 1.2rem;
+        border: 1.5px solid transparent;
+      }
+
+      .plan-card.popular {
+        border-color: rgba(75, 112, 221, 0.35);
+        transform: translateY(-10px);
+      }
+
+      .plan-price {
+        font-size: 2.6rem;
+        font-weight: 600;
+        color: var(--color-primary-dark);
+      }
+
+      .plan-features {
+        margin: 0;
+        padding-left: 1rem;
+        display: grid;
+        gap: 0.6rem;
+        color: var(--color-muted);
+      }
+
+      .faq-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+      }
+
+      details {
+        background: var(--color-card-bg);
+        border-radius: var(--radius-md);
+        padding: 1.4rem 1.6rem;
+        box-shadow: 0 14px 34px rgba(31, 42, 68, 0.06);
+      }
+
+      summary {
+        font-weight: 600;
+        cursor: pointer;
+        color: var(--color-text);
+        list-style: none;
+      }
+
+      summary::marker {
+        display: none;
+      }
+
+      summary::-webkit-details-marker {
+        display: none;
+      }
+
+      details[open] summary {
+        color: var(--color-primary-dark);
+      }
+
+      details p {
+        margin-top: 0.8rem;
+      }
+
+      .cta-banner {
+        margin-top: 2rem;
+        background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+        border-radius: var(--radius-lg);
+        padding: 3rem 3.5rem;
+        display: grid;
+        gap: 1.2rem;
+        text-align: center;
+        color: white;
+        box-shadow: 0 30px 60px rgba(31, 42, 68, 0.25);
+      }
+
+      .cta-banner h2 {
+        color: inherit;
+        font-family: "Manrope", sans-serif;
+        font-size: clamp(2rem, 4vw, 2.6rem);
+      }
+
+      .cta-banner p {
+        color: rgba(255, 255, 255, 0.85);
+      }
+
+      .cta-actions {
+        display: flex;
+        justify-content: center;
+        gap: 1.2rem;
+        flex-wrap: wrap;
+      }
+
+      .cta-actions .btn {
+        background: white;
+        color: var(--color-primary-dark);
+      }
+
+      .cta-actions .btn-outline {
+        background: transparent;
+        color: white;
+        border-color: rgba(255, 255, 255, 0.6);
+      }
+
+      .contact-section {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2.4rem;
+        background: var(--color-card-bg);
+        border-radius: var(--radius-lg);
+        padding: 3rem;
+        box-shadow: var(--shadow-soft);
+      }
+
+      .contact-section form {
+        display: grid;
+        gap: 1.2rem;
+      }
+
+      label {
+        font-weight: 600;
+        color: var(--color-text);
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 0.85rem 1rem;
+        border-radius: var(--radius-sm);
+        border: 1.5px solid rgba(31, 42, 68, 0.1);
+        font-family: inherit;
+        font-size: 1rem;
+        background: rgba(246, 247, 251, 0.7);
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      input:focus,
+      select:focus,
+      textarea:focus {
+        outline: none;
+        border-color: var(--color-primary);
+        box-shadow: 0 0 0 4px rgba(75, 112, 221, 0.15);
+      }
+
+      textarea {
+        min-height: 140px;
+        resize: vertical;
+      }
+
+      footer {
+        margin-top: 5rem;
+        background: #111827;
+        color: rgba(255, 255, 255, 0.75);
+      }
+
+      .footer-content {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 3.5rem 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 2.5rem;
+      }
+
+      .footer-brand h3 {
+        font-family: "Manrope", sans-serif;
+        color: white;
+        margin-bottom: 0.8rem;
+      }
+
+      .footer-links,
+      .footer-contact {
+        display: grid;
+        gap: 0.6rem;
+      }
+
+      .footer-links a {
+        color: rgba(255, 255, 255, 0.75);
+      }
+
+      .footer-links a:hover {
+        color: white;
+      }
+
+      .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      .mobile-nav-toggle {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 1.4rem;
+        cursor: pointer;
+        color: var(--color-primary-dark);
+      }
+
+      @media (max-width: 1024px) {
+        .hero {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+
+        .hero-bullets span {
+          justify-content: center;
+        }
+
+        .hero-cta {
+          justify-content: center;
+        }
+
+        .services-grid,
+        .testimonials,
+        .plans {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .approach {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+
+        .approach-steps {
+          text-align: left;
+        }
+
+        .metrics {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .contact-section {
+          grid-template-columns: 1fr;
+        }
+
+        .footer-content {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 768px) {
+        header {
+          position: static;
+        }
+
+        .nav {
+          flex-wrap: wrap;
+          gap: 1rem;
+        }
+
+        nav ul {
+          display: none;
+          flex-direction: column;
+          gap: 1rem;
+          width: 100%;
+          background: rgba(255, 255, 255, 0.98);
+          padding: 1rem;
+          border-radius: var(--radius-md);
+          box-shadow: 0 20px 40px rgba(31, 42, 68, 0.14);
+        }
+
+        nav ul.active {
+          display: flex;
+        }
+
+        .nav-actions {
+          width: 100%;
+          justify-content: flex-start;
+        }
+
+        .mobile-nav-toggle {
+          display: inline-flex;
+          align-items: center;
+        }
+
+        .services-grid,
+        .testimonials,
+        .plans {
+          grid-template-columns: 1fr;
+        }
+
+        .faq-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .footer-content {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <a class="logo" href="#top">
+          <span class="logo-badge">H</span>
+          Harbor Therapy
+        </a>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-expanded="false" aria-controls="primaryNav">
+          ☰
+        </button>
+        <nav>
+          <ul id="primaryNav">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#approach">Our Approach</a></li>
+            <li><a href="#testimonials">Stories</a></li>
+            <li><a href="#pricing">Plans</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-actions">
+          <a class="btn btn-outline" href="#contact">Free Consultation</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <span class="hero-eyebrow">Licensed online therapy • Compassionate care</span>
+          <h1>Find calm, clarity, and support with personalized therapy.</h1>
+          <p>
+            Whether you’re navigating anxiety, burnout, or life transitions, Harbor Therapy
+            pairs you with a licensed therapist who understands your story and supports your
+            growth with science-backed strategies.
+          </p>
+          <div class="hero-bullets">
+            <span>Flexible scheduling including evenings and weekends</span>
+            <span>Individual, couples, and group therapy options</span>
+            <span>Confidential, HIPAA-compliant sessions</span>
+          </div>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contact">Book a discovery call</a>
+            <a class="btn btn-outline" href="#services">Explore services</a>
+          </div>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <div class="hero-card">
+            <div>
+              <h3>Therapists available this week</h3>
+              <div class="hero-availability">
+                <span><strong>24</strong> openings for new clients</span>
+                <span><strong>48h</strong> average wait time</span>
+              </div>
+            </div>
+            <div class="stats">
+              <div class="stat-card">
+                <strong>92%</strong>
+                report reduced anxiety
+              </div>
+              <div class="stat-card">
+                <strong>4.9★</strong>
+                client satisfaction
+              </div>
+            </div>
+            <div>
+              <p>“I finally feel heard and supported. Every session gives me tools I can use.”</p>
+              <strong>— Maya, client since 2023</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="trust-bar">
+        <p>Trusted by clients from</p>
+        <div class="trust-logos">
+          <span>Forbes Health</span>
+          <span>Mindful Living</span>
+          <span>Calm Space Collective</span>
+          <span>RemoteWell Network</span>
+        </div>
+      </div>
+
+      <section id="services">
+        <div class="section-heading">
+          <h2>Therapy services tailored to support your journey</h2>
+          <p>
+            Explore specialized care designed around your needs. From immediate relief to long-term
+            growth, our therapists partner with you every step of the way.
+          </p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">🌿</div>
+            <h3>Individual Therapy</h3>
+            <p>
+              Personalized one-on-one sessions focused on anxiety, depression, stress management,
+              and life transitions.
+            </p>
+            <ul>
+              <li>Evidence-based CBT, ACT, and mindfulness</li>
+              <li>Weekly or bi-weekly 50-minute sessions</li>
+              <li>Goal tracking dashboard</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">🤝</div>
+            <h3>Couples Counseling</h3>
+            <p>
+              Rebuild trust, improve communication, and create a shared path toward a meaningful
+              relationship.
+            </p>
+            <ul>
+              <li>Licensed couples therapists</li>
+              <li>Conflict transformation strategies</li>
+              <li>Flexible 75-minute sessions</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">🌅</div>
+            <h3>Group Programs</h3>
+            <p>
+              Guided small-group sessions focused on burnout recovery, grief support, and mindful
+              leadership.
+            </p>
+            <ul>
+              <li>6–8 participants max</li>
+              <li>Structured curriculum with take-home exercises</li>
+              <li>Peer accountability and community</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="approach">
+        <div class="approach">
+          <div>
+            <div class="section-heading">
+              <h2>You deserve tailored, evidence-based care</h2>
+              <p>
+                Harbor therapists blend clinical expertise with genuine empathy. Our collaborative
+                approach ensures each session adapts to your pace, priorities, and progress.
+              </p>
+            </div>
+            <div class="approach-steps">
+              <div class="step">
+                <div class="step-heading">
+                  <span class="step-number">1</span>
+                  Personalized matching
+                </div>
+                <p>
+                  Complete a 5-minute intake. We pair you with a therapist experienced in your goals
+                  and identity.
+                </p>
+              </div>
+              <div class="step">
+                <div class="step-heading">
+                  <span class="step-number">2</span>
+                  Collaborative roadmap
+                </div>
+                <p>
+                  Co-create a care plan with clear milestones, check-ins, and resources between
+                  sessions.
+                </p>
+              </div>
+              <div class="step">
+                <div class="step-heading">
+                  <span class="step-number">3</span>
+                  Sustainable growth
+                </div>
+                <p>
+                  Practice actionable strategies and track how you feel each week with shared
+                  insights.
+                </p>
+              </div>
+            </div>
+          </div>
+          <aside class="therapist-card" aria-label="Lead therapist profile">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80" alt="Portrait of Dr. Lena Ortiz" />
+            <strong>Dr. Lena Ortiz, LMFT</strong>
+            <span class="credentials">15 years experience • Trauma-informed</span>
+            <p>
+              “Therapy should feel like a safe harbor—somewhere you can rest, reflect, and rebuild.
+              Together, we’ll uncover what resilience looks like for you.”
+            </p>
+          </aside>
+        </div>
+
+        <div class="metrics">
+          <div class="metric-card">
+            <strong>1,200+</strong>
+            clients supported to date
+          </div>
+          <div class="metric-card">
+            <strong>78%</strong>
+            notice improvements within 6 sessions
+          </div>
+          <div class="metric-card">
+            <strong>35</strong>
+            licensed therapists across 12 states
+          </div>
+          <div class="metric-card">
+            <strong>100%</strong>
+            HIPAA-compliant platform
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <div class="section-heading">
+          <h2>What our clients say</h2>
+          <p>
+            Real stories from clients who regained confidence, clarity, and balance with Harbor
+            Therapy.
+          </p>
+        </div>
+        <div class="testimonials">
+          <article class="testimonial-card">
+            <div class="testimonial-rating" aria-label="5 star rating">★★★★★</div>
+            <p>
+              “My therapist helped me untangle years of anxiety. The guided exercises between
+              sessions made the difference.”
+            </p>
+            <div class="testimonial-author">
+              <span>Maya S.</span>
+              <span>Product Designer • Seattle</span>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-rating" aria-label="5 star rating">★★★★★</div>
+            <p>
+              “Our relationship felt stuck. Harbor gave us language for our needs and a roadmap to
+              rebuild trust.”
+            </p>
+            <div class="testimonial-author">
+              <span>Jordan & Alex</span>
+              <span>Couples Counseling Clients</span>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-rating" aria-label="5 star rating">★★★★★</div>
+            <p>
+              “The group program felt like community. I’m calmer at work and kinder to myself.”
+            </p>
+            <div class="testimonial-author">
+              <span>Priya A.</span>
+              <span>Leadership Coach • Austin</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="pricing">
+        <div class="section-heading">
+          <h2>Flexible plans that grow with you</h2>
+          <p>
+            Start with a free 20-minute consultation. No long-term contracts—adjust your plan at any
+            time as your needs evolve.
+          </p>
+        </div>
+        <div class="plans">
+          <article class="plan-card">
+            <h3>Foundations</h3>
+            <p class="plan-price">$120<span style="font-size: 0.5em; font-weight: 500;"> / session</span></p>
+            <p>Ideal for individuals starting their therapy journey.</p>
+            <ul class="plan-features">
+              <li>Weekly 50-minute sessions</li>
+              <li>Personalized care plan & exercises</li>
+              <li>Secure messaging between sessions</li>
+            </ul>
+            <a class="btn btn-outline" href="#contact">Join waitlist</a>
+          </article>
+          <article class="plan-card popular">
+            <h3>Momentum</h3>
+            <p class="plan-price">$420<span style="font-size: 0.5em; font-weight: 500;"> / month</span></p>
+            <p>Best for sustained progress with added support.</p>
+            <ul class="plan-features">
+              <li>4 x 50-minute sessions monthly</li>
+              <li>Progress tracking dashboard</li>
+              <li>24-hour therapist response window</li>
+            </ul>
+            <a class="btn btn-primary" href="#contact">Schedule consult</a>
+          </article>
+          <article class="plan-card">
+            <h3>Partners</h3>
+            <p class="plan-price">$220<span style="font-size: 0.5em; font-weight: 500;"> / session</span></p>
+            <p>Designed for couples and families seeking deeper connection.</p>
+            <ul class="plan-features">
+              <li>75-minute joint sessions</li>
+              <li>Individual check-ins as needed</li>
+              <li>Shared resource library</li>
+            </ul>
+            <a class="btn btn-outline" href="#contact">Talk with us</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="section-heading">
+          <h2>Questions, answered</h2>
+          <p>
+            We’re here to help you feel confident taking the next step. If you don’t find what you
+            need, reach out and we’ll respond within one business day.
+          </p>
+        </div>
+        <div class="faq-grid">
+          <details>
+            <summary>How quickly can I start sessions?</summary>
+            <p>
+              Most clients begin within 2–5 days after their discovery call. We’ll match you with a
+              therapist who aligns with your needs and schedule.
+            </p>
+          </details>
+          <details>
+            <summary>Do you accept insurance?</summary>
+            <p>
+              Harbor Therapy is out-of-network, but we provide superbills for reimbursement and can
+              help you navigate employer wellness stipends.
+            </p>
+          </details>
+          <details>
+            <summary>Are sessions virtual or in person?</summary>
+            <p>
+              All sessions take place virtually using our secure, HIPAA-compliant video platform.
+              Select therapists also offer hybrid options upon request.
+            </p>
+          </details>
+          <details>
+            <summary>Can I switch therapists if it’s not the right fit?</summary>
+            <p>
+              Absolutely. Chemistry matters. Let us know and we’ll rematch you with another therapist
+              at no additional cost.
+            </p>
+          </details>
+        </div>
+        <div class="cta-banner">
+          <h2>Ready to feel supported on your terms?</h2>
+          <p>Book a free discovery call to ask questions, share your goals, and explore next steps.</p>
+          <div class="cta-actions">
+            <a class="btn" href="#contact">Schedule a call</a>
+            <a class="btn btn-outline" href="#services">See how therapy works</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="section-heading">
+          <h2>Let’s begin with a conversation</h2>
+          <p>
+            Share a bit about what you’re seeking and our care team will reach out with next steps in
+            under 24 hours.
+          </p>
+        </div>
+        <div class="contact-section">
+          <div>
+            <h3>Book a discovery call</h3>
+            <p>
+              We’ll discuss what you’re looking for, answer questions about our therapy process, and
+              recommend a therapist who fits your needs.
+            </p>
+            <ul>
+              <li>20-minute video call</li>
+              <li>No obligation to continue</li>
+              <li>Personalized therapist match guarantee</li>
+            </ul>
+          </div>
+          <form aria-label="Discovery call request form">
+            <div>
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" placeholder="Taylor Morgan" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div>
+              <label for="support">What support are you seeking?</label>
+              <select id="support" name="support" required>
+                <option value="">Select an option</option>
+                <option value="individual">Individual therapy</option>
+                <option value="couples">Couples counseling</option>
+                <option value="group">Group program</option>
+                <option value="corporate">Corporate wellness partnership</option>
+              </select>
+            </div>
+            <div>
+              <label for="message">Anything you’d like us to know?</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Share your goals, preferences, or scheduling needs."
+              ></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Request discovery call</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Harbor Therapy</h3>
+          <p>
+            Compassionate mental health support for individuals, couples, and leaders seeking calm,
+            clarity, and confidence.
+          </p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="#services">Services</a>
+            <a href="#approach">Our Approach</a>
+            <a href="#testimonials">Client Stories</a>
+            <a href="#pricing">Plans</a>
+          </div>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <div class="footer-links">
+            <a href="#">Mental health journal</a>
+            <a href="#">Guided meditations</a>
+            <a href="#">Support center</a>
+            <a href="#">Community events</a>
+          </div>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <div class="footer-contact">
+            <span>hello@harbortherapy.co</span>
+            <span>(855) 321-4243</span>
+            <span>License #HT-4921</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © <span id="year"></span> Harbor Therapy Collective. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      const mobileToggle = document.getElementById("mobileNavToggle");
+      const primaryNav = document.getElementById("primaryNav");
+      const yearSpan = document.getElementById("year");
+
+      if (mobileToggle && primaryNav) {
+        mobileToggle.addEventListener("click", () => {
+          const expanded = mobileToggle.getAttribute("aria-expanded") === "true";
+          mobileToggle.setAttribute("aria-expanded", String(!expanded));
+          primaryNav.classList.toggle("active");
+          mobileToggle.textContent = expanded ? "☰" : "✕";
+        });
+      }
+
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    </script>
+  </body>
+</html>
